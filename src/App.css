@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+.TopBarSection{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+  height: 50px;
+  border-bottom: 1px solid #b2ebf2;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  position: fixed;
+  width: 97%;
+  min-width: 70%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.companyName {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+ 
+}
+.companyName h2{
+  margin-right: 20px;
+  color: #0277bd;
+  text-decoration: none;
+}
+.searchBar{
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 500px;
+}
+.searchBar input[type='text']{
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+.searchBar input[type='text']:focus{
+  border-color: #3498db;
+}
+.userAuth{
+  margin-left: 20px;
+  color: #3498db;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.userAuth:hover{
+  color: #2980b9;
+}
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.TopBarSection {
+  animation: fadeIn 1s ease-in-out;
+}
+.itemSection{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 20px;
+   padding: 20px;
+   margin-top: 100px;
+   background-color: #f5f5f5;
+  
+}
+.gellery{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  text-align: center;
+  /* background-color: white; */
+  padding: 10px;
+  /* border-radius: 8px; */
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  transition: transform 0.3s;
+  /* background: none; */
+}
+.gellery:hover{
+  transform: scale(1.05);
+}
+.gellery img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  transition: box-shadow 0.3s;
+}
+.gellery img:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+.gellery h4{
+  font-size: 1rem;
+  color:black;
+  margin: 0;
+}
+.chainSection{
+
+display: flex;
+overflow-x: hidden;
+position: relative;
+height: auto;
+margin: 0 60px;
+}
+
+.vendorBox{
+ 
+  border-radius: 10px;
+}
+.vendorBox img{
+  width: 350px;
+  height: 220px;
+  flex: 0 0 auto;
+  margin-right: 30px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.firmSection{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+margin: 0 60px;
+gap: 20px;
+}
+.title{
+    margin-left: 60px;
+    
+}
+.firmImage{
+  position: relative;
+}
+.firmImage img{
+
+  width: 240px;
+  height: 180px;
+  flex: 0 0 auto;
+  margin-right: 30px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.firmOffer{
+  
+  width: 100%;
+  max-width: 85%;
+  position:absolute;
+  bottom: 5px;
+  padding-left: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: white;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+  text-transform:uppercase;
+  background: transparent;
+  background: linear-gradient(to bottom,rgb(50, 0, 0,0.08),black);
+}
+.firmData{
+  padding-left: 10px;
+  margin: 0;
+}
+.firmName{
+  color:"black"
+}
+.firmArea{
+  font-size: small;
+  color: gray;
+}
+.productsection{
+  display: flex;
+  flex-direction: column;
+  padding: 0 150px;
+  margin-top: 80px;
+}
+.productsection h3{
+  text-align: center;
+  background-color: orange;
+}
+.productImage img{
+  width: 100px;
+  border-radius: 5px;
+}
+.productBox{
+  display: flex;
+  border-top: 2px solid lightgray;
+  justify-content: space-between;
+  padding: 10px 30px;
+  position: relative;
+}
+.addButton{
+  border: 1px solid lightgray;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  color: green;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  max-width: 80px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.link{
+  color: black;
+  text-decoration: none;
+}
+.buttonSection{
+
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 70px;
+  position: relative;
+  top: 50px;
+  right: 20px;
+ gap: 10px;
+}
+.buttonSection button{
+  border: none;
+  background: none;
+}
+.btnIcons{
+ 
+  font-size: x-large;
+}
+.loaderSection{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filterSection{
+  margin-bottom: 20px;
+  display: flex;
+  margin:  20px 60px;
+  justify-content: space-evenly;
+}
+.activeButton{
+  background-color: blue;
+  color: white;
+}
+.filterSection button{
+  width: 10rem;
+  padding: 5px 0;
+  border-radius: 5px;
+}
+/* Media Query for max-width of 572px */
+@media (max-width: 572px) {
+  .TopBarSection {
+   display: flex;
+    align-items: stretch;
+    padding:  0 10px;
+    height: auto;
+    width: 100%;
+    position: static;
+    
+  }
+
+  .TopBarSection .companyName {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .TopBarSection .companyName h2 {
+    font-size: 18px;
+  }
+
+  .TopBarSection .searchBar {
+    width: 100%;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+
+  .TopBarSection .searchBar input {
+    width: 90%;
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .TopBarSection .userAuth {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+  }
+  .itemSection {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+    width: 80%;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  .gellery {
+    width: 100px;
+    max-width: 40px;
+    padding: 5px;
+  }
+
+  .gellery img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .gellery h4 {
+    font-size: 0.5rem;
+  }
+  h3{
+    font-weight: 700;
+    font-size: 0.8rem;
+    
+  }
+  .chainSection{
+    height: 190px;
+  }
+  .vendorBox img{
+    width: 250px;
+    height: 180px;
+    flex: 0 0 auto;
+    margin-right: 30px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .mediaChainSection{
+    
+    margin-top: -30px;
+  }
+  .firmSection{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    }
+    .firmOffer{
+      position: absolute;
+      width: 100%;
+      max-width: 88%;
+    }
+    .firmImage img{
+     width: 300px;
+    }
+    .productsection{
+      padding: 0 10px;
+      margin-top: 30px;
+    }
+    .productsection h3{
+      text-align: center;
+      background-color: orange;
+    }
+    .buttonSection{
+
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 20px;
+      position: relative;
+      top: 40px;
+      right: 20px;
+     gap: 10px;
+    }
+    .btnIcons{
+      font-size: large;
+    }
+   
+    .filterSection button{
+      width: 4rem;
+      padding: 3px;
+      margin-right: 5px;
+    }
+}
+ 
